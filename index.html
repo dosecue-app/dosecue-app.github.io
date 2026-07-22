@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PillReminder — Smart & Local-First iOS Medication Tracker</title>
+  <meta name="description" content="PillReminder is a private, local-first iOS medication reminder app with dose tracking, refill alerts, history reports, and zero cloud tracking.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-15zM10.5 4.5C10.5 3.67 11.17 3 12 3s1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-15z" />
+            <path d="M6 3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm0 2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6z"/>
+          </svg>
+        </div>
+        <span>PillReminder</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#overview" class="active">Overview</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#privacy">Privacy First</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+
+      <a href="#download" class="cta-button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.32c.67-.82 1.13-1.96.99-3.12-1 .04-2.18.67-2.88 1.49-.6.7-1.12 1.84-.97 2.96 1.11.09 2.21-.51 2.86-1.33z"/>
+        </svg>
+        App Store
+      </a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="overview">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span> iOS 17+ • Local-First • 100% Private</span>
+        </div>
+        <h1 class="hero-title">Take Control of Your Medications, <span>Never Miss a Dose</span></h1>
+        <p class="hero-subtitle">
+          PillReminder is your intuitive, local-first iOS medication management companion. Schedule reminders, track doses, monitor inventory refills, and generate adherence reports—all kept securely on your device.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#features" class="cta-button">
+            Explore Features
+          </a>
+          <a href="privacy.html" class="btn-secondary">
+            Read Privacy Policy
+          </a>
+        </div>
+      </div>
+
+      <!-- App Mockup UI (Rendered CSS view matching actual iOS screenshots) -->
+      <div class="hero-mockup-wrapper">
+        <div class="app-phone-card">
+          <div class="phone-header">
+            <div>
+              <div class="phone-header-title">Today</div>
+              <div class="phone-date">Wednesday, July 22</div>
+            </div>
+            <div style="background: #e0e7ff; color: #2563eb; padding: 0.3rem 0.6rem; border-radius: 8px; font-size: 0.75rem; font-weight: 600;">
+              📅 Calendar
+            </div>
+          </div>
+
+          <!-- Progress Widget -->
+          <div class="progress-widget">
+            <div>
+              <div class="progress-info-title">Today's Progress</div>
+              <div class="progress-info-val">6 / 8</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">doses completed</div>
+            </div>
+            <div class="progress-ring"></div>
+          </div>
+
+          <!-- Dose Item 1 -->
+          <div class="dose-card-mock">
+            <div class="dose-mock-header">
+              <div class="dose-icon-bg icon-blue">💊</div>
+              <div>
+                <div class="dose-mock-title">Metformin 500 mg</div>
+                <div class="dose-mock-sub">09:15 AM • 1 tablet</div>
+              </div>
+            </div>
+            <div class="dose-mock-actions">
+              <button class="btn-action-sm btn-skip">✕ Skip</button>
+              <button class="btn-action-sm btn-taken">✓ Taken</button>
+              <button class="btn-action-sm btn-snooze">⏰ Snooze</button>
+            </div>
+          </div>
+
+          <!-- Dose Item 2 -->
+          <div class="dose-card-mock">
+            <div class="dose-mock-header">
+              <div class="dose-icon-bg icon-amber">🟡</div>
+              <div>
+                <div class="dose-mock-title">Amoxicillin 250 mg</div>
+                <div class="dose-mock-sub">10:15 AM • 1 capsule</div>
+              </div>
+            </div>
+            <div class="dose-mock-actions">
+              <button class="btn-action-sm btn-skip">✕ Skip</button>
+              <button class="btn-action-sm btn-taken">✓ Taken</button>
+              <button class="btn-action-sm btn-snooze">⏰ Snooze</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      
+      <!-- Feature Highlights -->
+      <section id="features" style="scroll-margin-top: 100px;">
+        <div class="section-header">
+          <div class="section-tag">Key Capabilities</div>
+          <h2 class="section-title">Designed for Simplicity & Peace of Mind</h2>
+          <p class="section-desc">PillReminder equips you with everything you need to stay on top of your regimen without unnecessary complexity.</p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">⏰</div>
+            <h3 class="feature-title">Smart Dose Schedules</h3>
+            <p class="feature-text">
+              Set exact times, recurring daily routines, or flexible intervals. Receive timely notifications directly on your iPhone with quick actions to Mark Taken, Skip, or Snooze.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📦</div>
+            <h3 class="feature-title">Inventory & Refill Alerts</h3>
+            <p class="feature-text">
+              Track remaining pills, capsules, or liquid doses. Get low-stock warnings before you run out, plus expiration reminders to ensure your medications remain safe.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📊</div>
+            <h3 class="feature-title">History & Progress Reports</h3>
+            <p class="feature-text">
+              Review your adherence history across Week, Month, or Year filters. Access comprehensive Report charts and export clean PDF/CSV summaries for your doctor visits.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card" id="privacy">
+            <div class="feature-icon-wrapper">🛡️</div>
+            <h3 class="feature-title">100% Local-First Privacy</h3>
+            <p class="feature-text">
+              Your sensitive health data stays strictly on your device using Apple's SwiftData framework. No mandatory registration, no accounts, and no data selling.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📱</div>
+            <h3 class="feature-title">Widgets & Customization</h3>
+            <p class="feature-text">
+              Glance at today's remaining doses right from your Home Screen with WidgetKit. Supports Dark Mode, custom app icons, and multiple localized languages.
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper purple">👑</div>
+            <h3 class="feature-title">Premium Lifetime Access</h3>
+            <p class="feature-text">
+              Unlock unlimited medication schedules, advanced trend reports, and export options with a single one-time purchase. No subscription traps required.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Medical Disclaimer Card -->
+      <section class="disclaimer-card">
+        <div class="disclaimer-icon">⚠️</div>
+        <div>
+          <div class="disclaimer-title">Medical Safety Notice</div>
+          <div class="disclaimer-text">
+            PillReminder is intended for personal organization, reminder scheduling, and adherence tracking only. It does not provide medical advice, recommend dosages, diagnose conditions, or replace the professional judgment of your doctor, pharmacist, or healthcare provider.
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal Quick Links -->
+      <section style="margin-bottom: 4rem;">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <h2 class="section-title" style="font-size: 1.75rem;">Legal & Privacy Information</h2>
+          <p class="section-desc">We believe in total transparency. Review our policies below.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+          <a href="privacy.html" class="feature-card" style="text-decoration: none; color: inherit;">
+            <div class="feature-title" style="color: var(--primary);">🔒 Privacy Policy →</div>
+            <p class="feature-text">Learn how your data is stored locally on your device and how analytics/purchases are handled.</p>
+          </a>
+
+          <a href="terms.html" class="feature-card" style="text-decoration: none; color: inherit;">
+            <div class="feature-title" style="color: var(--primary);">📄 Terms of Service →</div>
+            <p class="feature-text">Read the terms governing the use of PillReminder, reminder reliability, and Premium purchases.</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-15zM10.5 4.5C10.5 3.67 11.17 3 12 3s1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-15z" />
+            </svg>
+          </div>
+          <span>PillReminder</span>
+        </a>
+
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 PillReminder Team. Built for iOS 17+. All rights reserved.</div>
+        <div>Local-First Medication & Schedule Reminder</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

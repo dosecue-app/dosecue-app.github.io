@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — PillReminder</title>
+  <meta name="description" content="Privacy Policy for PillReminder iOS App. Learn about our local-first data architecture, zero cloud tracking, and how your information is protected.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-15zM10.5 4.5C10.5 3.67 11.17 3 12 3s1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-15z" />
+          </svg>
+        </div>
+        <span>PillReminder</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+
+      <a href="index.html#download" class="cta-button">
+        App Store
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="main-content">
+    <div class="container">
+      
+      <div class="doc-layout">
+        
+        <!-- Sidebar Navigation (TOC) -->
+        <aside class="doc-sidebar">
+          <div class="doc-sidebar-title">Table of Contents</div>
+          <ul class="toc-list">
+            <li><a href="#sec-1" class="active">1. Information Stored</a></li>
+            <li><a href="#sec-2">2. Notifications</a></li>
+            <li><a href="#sec-3">3. Analytics & Diagnostics</a></li>
+            <li><a href="#sec-4">4. Purchases</a></li>
+            <li><a href="#sec-5">5. Exported Data</a></li>
+            <li><a href="#sec-6">6. Data Sharing & Sale</a></li>
+            <li><a href="#sec-7">7. Retention & Deletion</a></li>
+            <li><a href="#sec-8">8. Security</a></li>
+            <li><a href="#sec-9">9. Children's Privacy</a></li>
+            <li><a href="#sec-10">10. International Users</a></li>
+            <li><a href="#sec-11">11. Policy Changes</a></li>
+            <li><a href="#sec-12">12. Contact</a></li>
+          </ul>
+        </aside>
+
+        <!-- Privacy Document Article -->
+        <article class="doc-article">
+          
+          <header class="doc-header">
+            <h1 class="doc-title">Privacy Policy</h1>
+            <div class="doc-meta">Effective Date: July 22, 2026 • Published by PillReminder Team</div>
+          </header>
+
+          <p style="font-size: 1.05rem; margin-bottom: 1.5rem;">
+            This Privacy Policy explains how PillReminder ("the App", "we", "us") handles information when you use our iOS application.
+          </p>
+
+          <div class="doc-callout">
+            <strong>🛡️ Local-First Privacy Guarantee:</strong> PillReminder stores your medication schedule and dose records locally on your device. We do not require an account, and we do not sell your health data.
+          </div>
+
+          <!-- Section 1 -->
+          <section id="sec-1" class="doc-section">
+            <h2 class="doc-section-h2">1. Information Stored in the App</h2>
+            <p>Depending on the features you use, PillReminder may store:</p>
+            <ul>
+              <li>Medication names, dosage, instructions, and schedules.</li>
+              <li>Reminder preferences and notification identifiers.</li>
+              <li>Taken, skipped, missed, and snoozed dose records.</li>
+              <li>Medication inventory, refill thresholds, and expiration dates.</li>
+              <li>Adherence reports and statistics.</li>
+              <li>Profile preferences and App settings.</li>
+            </ul>
+            <p>
+              In the current local-first version, this information is stored primarily on your device using Apple's SwiftData framework and is not uploaded to our own server.
+            </p>
+            <p><strong>No account is required to use the App.</strong></p>
+          </section>
+
+          <!-- Section 2 -->
+          <section id="sec-2" class="doc-section">
+            <h2 class="doc-section-h2">2. Notifications</h2>
+            <p>
+              PillReminder requests notification permission to deliver medication, refill, inventory, and expiration reminders that you configure.
+            </p>
+            <p>
+              Notifications are scheduled and managed through Apple’s notification services directly on your device. You can change notification access at any time in iOS Settings.
+            </p>
+          </section>
+
+          <!-- Section 3 -->
+          <section id="sec-3" class="doc-section">
+            <h2 class="doc-section-h2">3. Analytics and Diagnostics</h2>
+            <p>
+              We may use limited analytics and crash-reporting tools (such as Firebase Analytics and Firebase Crashlytics) to understand feature usage, diagnose errors, and improve the App.
+            </p>
+            <p>These tools may process technical information such as:</p>
+            <ul>
+              <li>App version and build number.</li>
+              <li>Device and operating-system type.</li>
+              <li>General interaction events (e.g. screen navigation).</li>
+              <li>Crash logs and performance information.</li>
+              <li>Anonymous or pseudonymous installation identifiers.</li>
+            </ul>
+            <div class="doc-callout">
+              <strong>Note:</strong> We do <u>not</u> intentionally send medication names, dosages, instructions, dose notes, inventory quantities, or exported file contents to analytics services.
+            </div>
+          </section>
+
+          <!-- Section 4 -->
+          <section id="sec-4" class="doc-section">
+            <h2 class="doc-section-h2">4. Purchases</h2>
+            <p>
+              Premium purchases are processed securely by Apple through StoreKit 2.
+            </p>
+            <p>
+              We do not receive or store your full payment-card details. We may receive purchase status, product identifiers, subscription status, and transaction information required to unlock Premium features and restore purchases.
+            </p>
+          </section>
+
+          <!-- Section 5 -->
+          <section id="sec-5" class="doc-section">
+            <h2 class="doc-section-h2">5. Exported Data</h2>
+            <p>
+              When you create a CSV or PDF export, the file is generated locally on your device.
+            </p>
+            <p>
+              You choose where the file is sent through the iOS Share Sheet. Once you save or share it with Files, Mail, AirDrop, cloud storage, or another service, that destination’s privacy practices apply.
+            </p>
+            <p>We do not automatically upload or intercept exported files.</p>
+          </section>
+
+          <!-- Section 6 -->
+          <section id="sec-6" class="doc-section">
+            <h2 class="doc-section-h2">6. Data Sharing and Sale</h2>
+            <ul>
+              <li>We <strong>do not sell</strong> your personal or medication information.</li>
+              <li>We <strong>do not use</strong> medication information for advertising or tracking across other companies’ apps or websites.</li>
+            </ul>
+            <p>
+              Information may be processed by service providers only where necessary to operate purchases, analytics, diagnostics, legal-document hosting, or other App functionality. Their processing is subject to their own privacy policies.
+            </p>
+          </section>
+
+          <!-- Section 7 -->
+          <section id="sec-7" class="doc-section">
+            <h2 class="doc-section-h2">7. Data Retention and Deletion</h2>
+            <p>
+              Local medication information remains on your device until you delete it, reset App data, or uninstall the App.
+            </p>
+            <p>
+              The <strong>Delete Data</strong> feature in the Settings tab allows you to permanently remove selected categories such as medications, schedules, dose history, reports, inventory, and settings.
+            </p>
+            <p>Deleting App data does not remove:</p>
+            <ul>
+              <li>App Store purchase history.</li>
+              <li>Active Apple subscriptions (managed via Apple ID).</li>
+              <li>Files previously exported and saved outside the App.</li>
+              <li>Information independently held by third-party services.</li>
+            </ul>
+          </section>
+
+          <!-- Section 8 -->
+          <section id="sec-8" class="doc-section">
+            <h2 class="doc-section-h2">8. Security</h2>
+            <p>
+              We use reasonable measures to reduce unauthorized access to App data. However, no device, storage system, or electronic transmission method is completely secure.
+            </p>
+            <p>
+              You are responsible for maintaining device security, screen-lock protection, backups, and access to exported files.
+            </p>
+          </section>
+
+          <!-- Section 9 -->
+          <section id="sec-9" class="doc-section">
+            <h2 class="doc-section-h2">9. Children’s Privacy</h2>
+            <p>
+              PillReminder is not specifically directed to children under 13.
+            </p>
+            <p>
+              We do not knowingly request personal contact information from children. A parent or guardian should supervise use of the App by a minor, especially when medication schedules are involved.
+            </p>
+          </section>
+
+          <!-- Section 10 -->
+          <section id="sec-10" class="doc-section">
+            <h2 class="doc-section-h2">10. International Users</h2>
+            <p>
+              Depending on your location, you may have rights to access, correct, delete, or restrict the use of personal information under laws such as GDPR or CCPA.
+            </p>
+            <p>
+              Because core medication data is stored locally, many of these controls are available directly through the App’s export and deletion features in Settings.
+            </p>
+          </section>
+
+          <!-- Section 11 -->
+          <section id="sec-11" class="doc-section">
+            <h2 class="doc-section-h2">11. Changes to This Policy</h2>
+            <p>
+              We may update this Privacy Policy when the App, its services, or legal requirements change. The current version will be published on this page with an updated effective date.
+            </p>
+          </section>
+
+          <!-- Section 12 -->
+          <section id="sec-12" class="doc-section">
+            <h2 class="doc-section-h2">12. Contact</h2>
+            <p>
+              If you have any questions or privacy-related requests, please contact us at:
+            </p>
+            <p style="font-weight: 600; color: var(--primary);">
+              📧 support@pillreminder.app
+            </p>
+          </section>
+
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-15zM10.5 4.5C10.5 3.67 11.17 3 12 3s1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-15z" />
+            </svg>
+          </div>
+          <span>PillReminder</span>
+        </a>
+
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 PillReminder Team. All rights reserved.</div>
+        <div>Local-First Privacy Architecture</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
