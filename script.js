@@ -1,4 +1,4 @@
-// PillReminder Website Scripts
+// DoseCue Website Scripts
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Table of Contents Scroll Observer for Privacy & Terms pages
