@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — DoseCue</title>
-  <meta name="description" content="Privacy Policy for DoseCue iOS App. Learn about our local-first data architecture, zero cloud tracking, and how your information is protected.">
+  <meta name="description" content="Privacy Policy for the DoseCue iOS app, including its local-first storage, reminders, widgets, purchases, exports, support communications, and data deletion controls.">
   <link rel="icon" type="image/png" href="assets/dosecue.png">
   <link rel="stylesheet" href="styles.css?v=20260730">
   <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Header Navigation -->
   <header class="navbar">
     <div class="nav-container">
       <a href="index.html" class="brand-logo">
@@ -34,202 +33,234 @@
     </div>
   </header>
 
-  <!-- Main Content Layout -->
   <main class="main-content">
     <div class="container">
-      
       <div class="doc-layout">
-        
-        <!-- Sidebar Navigation (TOC) -->
+
         <aside class="doc-sidebar">
           <div class="doc-sidebar-title">Table of Contents</div>
           <ul class="toc-list">
-            <li><a href="#sec-1" class="active">1. Information Stored</a></li>
-            <li><a href="#sec-2">2. Notifications</a></li>
-            <li><a href="#sec-3">3. Analytics & Diagnostics</a></li>
-            <li><a href="#sec-4">4. Purchases</a></li>
-            <li><a href="#sec-5">5. Exported Data</a></li>
-            <li><a href="#sec-6">6. Data Sharing & Sale</a></li>
-            <li><a href="#sec-7">7. Retention & Deletion</a></li>
-            <li><a href="#sec-8">8. Security</a></li>
-            <li><a href="#sec-9">9. Children's Privacy</a></li>
-            <li><a href="#sec-10">10. International Users</a></li>
-            <li><a href="#sec-11">11. Policy Changes</a></li>
-            <li><a href="#sec-12">12. Contact</a></li>
+            <li><a href="#sec-1" class="active">1. Local App Data</a></li>
+            <li><a href="#sec-2">2. Profile, Camera &amp; Photos</a></li>
+            <li><a href="#sec-3">3. Notifications &amp; Widgets</a></li>
+            <li><a href="#sec-4">4. Analytics &amp; Diagnostics</a></li>
+            <li><a href="#sec-5">5. Premium Purchases</a></li>
+            <li><a href="#sec-6">6. Exports</a></li>
+            <li><a href="#sec-7">7. Support &amp; Legal Pages</a></li>
+            <li><a href="#sec-8">8. Sharing, Sale &amp; Tracking</a></li>
+            <li><a href="#sec-9">9. Retention, Deletion &amp; Backups</a></li>
+            <li><a href="#sec-10">10. Security</a></li>
+            <li><a href="#sec-11">11. Children</a></li>
+            <li><a href="#sec-12">12. Your Privacy Rights</a></li>
+            <li><a href="#sec-13">13. Policy Changes</a></li>
+            <li><a href="#sec-14">14. Contact</a></li>
           </ul>
         </aside>
 
-        <!-- Privacy Document Article -->
         <article class="doc-article">
-          
           <header class="doc-header">
             <h1 class="doc-title">Privacy Policy</h1>
-            <div class="doc-meta">Effective Date: July 22, 2026 • Published by DoseCue Team</div>
+            <div class="doc-meta">Last Updated: August 6, 2026 • Effective Date: August 6, 2026</div>
           </header>
 
           <p style="font-size: 1.05rem; margin-bottom: 1.5rem;">
-            This Privacy Policy explains how DoseCue ("the App", "we", "us") handles information when you use our iOS application.
+            This Privacy Policy explains how the DoseCue iOS application (the “App”) and DoseCue’s legal-document pages handle information. The person responsible for DoseCue and for personal information received outside the App is <strong>Ngoc Son</strong>, an individual developer based in <strong>Vietnam</strong> (“DoseCue,” “we,” “us,” or “our”).
           </p>
 
           <div class="doc-callout">
-            <strong>🛡️ Local-First Privacy Guarantee:</strong> DoseCue stores your medication schedule and dose records locally on your device. We do not require an account, and we do not sell your health data.
+            <strong>🛡️ Local-first design:</strong> DoseCue does not require an account. Medication records and other core health-related data are processed locally on your device and are not uploaded to a DoseCue-operated server. Limited information may still reach Apple, GitHub, Google, your email provider, or a service you deliberately choose, as described below.
           </div>
 
-          <!-- Section 1 -->
           <section id="sec-1" class="doc-section">
-            <h2 class="doc-section-h2">1. Information Stored in the App</h2>
-            <p>Depending on the features you use, DoseCue may store:</p>
+            <h2 class="doc-section-h2">1. Information Processed and Stored Locally</h2>
+            <p>Depending on the features you choose to use, the App may process and store:</p>
             <ul>
-              <li>Medication names, dosage, instructions, and schedules.</li>
-              <li>Reminder preferences and notification identifiers.</li>
-              <li>Taken, skipped, missed, and snoozed dose records.</li>
-              <li>Medication inventory, refill thresholds, and expiration dates.</li>
-              <li>Adherence reports and statistics.</li>
-              <li>Profile preferences and App settings.</li>
+              <li><strong>Medication data:</strong> medication name, strength, form, dose quantity, instructions, notes, display color and icon, schedules, reminder times, and time-zone information.</li>
+              <li><strong>Dose history:</strong> planned dose times; taken, taken-late, skipped, missed, pending, and snoozed statuses; action and correction times; snooze time; quantity consumed; and snapshots of medication details used to preserve historical context.</li>
+              <li><strong>Inventory data:</strong> current quantity, low-stock threshold, expiration date, and expiration-reminder timing.</li>
+              <li><strong>In-App preferences:</strong> reminder types, sound preference, whether a medication name appears in notifications, selected language, and onboarding status.</li>
+              <li><strong>Local profile data:</strong> a profile identifier, optional display name, optional age, selected built-in avatar, or a processed copy of a custom profile photo and up to three recent custom avatars.</li>
+              <li><strong>Purchase state:</strong> a local cache of the Premium plan, subscription state, expiration date, auto-renewal status, and last verification date obtained through Apple.</li>
+              <li><strong>Generated information:</strong> adherence summaries, charts, trends, statistics, and export files calculated from locally stored medication and dose data.</li>
             </ul>
             <p>
-              In the current local-first version, this information is stored primarily on your device using Apple's SwiftData framework and is not uploaded to our own server.
+              Core records use Apple’s SwiftData storage on the device. Profile files use the App’s local Documents directory, preferences use local app storage, and the widget uses an App Group cache shared only between the App and its widget extension. DoseCue currently has no user-account system and no DoseCue-operated backend for this data.
             </p>
-            <p><strong>No account is required to use the App.</strong></p>
           </section>
 
-          <!-- Section 2 -->
           <section id="sec-2" class="doc-section">
-            <h2 class="doc-section-h2">2. Notifications</h2>
+            <h2 class="doc-section-h2">2. Profile Photos, Camera, and Photo Library</h2>
             <p>
-              DoseCue requests notification permission to deliver medication, refill, inventory, and expiration reminders that you configure.
+              If you choose a custom profile photo, you may select an image from your photo library or take a new photo. The App requests camera or photo-library access only when needed for the option you select.
             </p>
             <p>
-              Notifications are scheduled and managed through Apple’s notification services directly on your device. You can change notification access at any time in iOS Settings.
+              The selected image is cropped, resized, and re-encoded into an App-managed copy stored locally. DoseCue does not upload that copy to its own server. The original photo remains under the control of the Camera or Photos app and is not deleted when you remove the App-managed profile copy.
+            </p>
+            <p>
+              Resetting App Settings removes the local profile and App-managed avatar copies. It does not revoke camera or photo-library permissions; you manage system permissions in iOS Settings.
             </p>
           </section>
 
-          <!-- Section 3 -->
           <section id="sec-3" class="doc-section">
-            <h2 class="doc-section-h2">3. Analytics and Diagnostics</h2>
+            <h2 class="doc-section-h2">3. Notifications and Home Screen Widgets</h2>
             <p>
-              The current version of DoseCue does not integrate third-party analytics or crash-reporting SDKs and does not send app-usage analytics to our servers.
+              DoseCue requests notification permission to deliver the medication, snooze, low-stock, refill-forecast, and expiration reminders you configure. Notifications are scheduled through Apple’s notification framework. Depending on your preference, visible notification content may include a medication name, strength, dose information, or reminder status. Anyone who can view your Lock Screen or notifications may be able to see that content.
             </p>
             <p>
-              DoseCue does not send medication names, dosages, instructions, dose notes, inventory quantities, dose history, or exported file contents to analytics services.
+              Home Screen widgets use a small App Group cache containing up to today’s and tomorrow’s relevant dose information, such as medication name, strength, schedule time, status, summary counts, locale, and Premium-access state. Widget information may be visible to anyone who can view your device’s Home Screen.
             </p>
             <p>
-              Apple may provide aggregated App Store metrics or diagnostics according to your device settings and Apple’s privacy terms. These reports are handled by Apple and do not give us access to your medication records.
+              You can change notification access and visibility in iOS Settings and manage widgets from the Home Screen. Resetting App Settings resets DoseCue’s in-App notification preferences but cannot reset iOS system permission. Deleting all categories removes DoseCue’s pending and delivered notifications and clears its widget cache; iOS permission remains controlled by Apple and the device owner.
             </p>
           </section>
 
-          <!-- Section 4 -->
           <section id="sec-4" class="doc-section">
-            <h2 class="doc-section-h2">4. Purchases</h2>
+            <h2 class="doc-section-h2">4. Analytics and Diagnostics</h2>
             <p>
-              Premium purchases are processed securely by Apple through StoreKit 2.
+              The current version of DoseCue does not integrate third-party analytics or crash-reporting SDKs and does not send App-usage analytics to a DoseCue server.
             </p>
             <p>
-              We do not receive or store your full payment-card details. We may receive purchase status, product identifiers, subscription status, and transaction information required to unlock Premium features and restore purchases.
+              DoseCue does not send medication names, dosages, instructions, notes, inventory quantities, dose history, profile photos, or export contents to analytics services.
+            </p>
+            <p>
+              Apple may provide aggregated App Store metrics and diagnostics according to your device and App Store privacy settings. Apple handles that information under its own privacy terms, and those reports do not provide DoseCue with your locally stored medication records. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.
             </p>
           </section>
 
-          <!-- Section 5 -->
           <section id="sec-5" class="doc-section">
-            <h2 class="doc-section-h2">5. Exported Data</h2>
+            <h2 class="doc-section-h2">5. Premium Purchases</h2>
             <p>
-              When you create a CSV or PDF export, the file is generated locally on your device.
+              Monthly subscriptions, yearly subscriptions, eligible free trials, and the Lifetime purchase are offered through Apple’s App Store and processed with StoreKit. Apple, not DoseCue, processes your payment method and maintains your App Store purchase history.
             </p>
             <p>
-              You choose where the file is sent through the iOS Share Sheet. Once you save or share it with Files, Mail, AirDrop, cloud storage, or another service, that destination’s privacy practices apply.
+              DoseCue does not receive or store full payment-card details. To unlock features and restore purchases, the App receives and locally caches limited transaction and entitlement information, such as product identifier, plan, subscription status, expiration date, auto-renewal status, and verification time.
             </p>
-            <p>We do not automatically upload or intercept exported files.</p>
           </section>
 
-          <!-- Section 6 -->
           <section id="sec-6" class="doc-section">
-            <h2 class="doc-section-h2">6. Data Sharing and Sale</h2>
-            <ul>
-              <li>We <strong>do not sell</strong> your personal or medication information.</li>
-              <li>We <strong>do not use</strong> medication information for advertising or tracking across other companies’ apps or websites.</li>
-            </ul>
+            <h2 class="doc-section-h2">6. CSV and PDF Exports</h2>
             <p>
-              Apple processes Premium purchases. GitHub Pages hosts this Privacy Policy and the Terms of Service. Their processing is subject to their own privacy policies. DoseCue does not send your medication records to these services.
+              CSV and PDF files are generated on your device. General export files are stored temporarily in the App’s cache, are normally removed after the share flow, and managed export files older than approximately 24 hours are removed the next time the export feature performs its cleanup. Report exports use temporary App-managed files that are removed when they are replaced or no longer needed.
+            </p>
+            <p>
+              You decide where an export goes through the iOS Share Sheet. If you save or share a file using Files, Mail, AirDrop, cloud storage, or another app or person, the chosen recipient’s privacy and retention practices apply. DoseCue does not automatically upload or intercept the exported file.
+            </p>
+            <p>
+              Relevant Delete Data selections clear App-managed export and report files, but they cannot delete copies you previously saved or shared outside DoseCue.
             </p>
           </section>
 
-          <!-- Section 7 -->
           <section id="sec-7" class="doc-section">
-            <h2 class="doc-section-h2">7. Data Retention and Deletion</h2>
+            <h2 class="doc-section-h2">7. Support Communications and Legal Pages</h2>
             <p>
-              Local medication information remains on your device until you delete it, reset App data, or uninstall the App.
+              If you choose to email support from the App, the draft may include the App version and build, device model, and iOS version. You decide whether to send it and may edit the subject or message and add attachments. Your email address, message, attachments, and this technical context are then processed by your email provider and the DoseCue support inbox, currently hosted by Google.
             </p>
             <p>
-              The <strong>Delete Data</strong> feature in the Settings tab allows you to permanently remove selected categories such as medications, schedules, dose history, reports, inventory, and settings.
+              Support communications are generally retained while your request is active and for up to six months after the last interaction. They may be deleted earlier through manual or automated mailbox storage management, including when storage limits are reached, and we do not guarantee retention for the full six-month period. We may retain them longer where reasonably necessary to comply with legal obligations, prevent abuse, or establish, exercise, or defend legal claims. You may request deletion as described in Section 12. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
             </p>
-            <p>Deleting App data does not remove:</p>
-            <ul>
-              <li>App Store purchase history.</li>
-              <li>Active Apple subscriptions (managed via Apple ID).</li>
-              <li>Files previously exported and saved outside the App.</li>
-              <li>Information independently held by third-party services.</li>
-            </ul>
+            <p>
+              The App first attempts to load its Privacy Policy and Terms of Service from GitHub Pages using a non-persistent web session, with an offline copy bundled in the App as a fallback. GitHub may receive ordinary web-request data such as your IP address, user agent, requested page, and request time. DoseCue does not include your medication records in that request. GitHub controls its own log retention and security practices. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s Privacy Statement</a>.
+            </p>
           </section>
 
-          <!-- Section 8 -->
           <section id="sec-8" class="doc-section">
-            <h2 class="doc-section-h2">8. Security</h2>
+            <h2 class="doc-section-h2">8. Data Sharing, Sale, Advertising, and Tracking</h2>
+            <ul>
+              <li>We do <strong>not sell</strong> your personal information or medication information.</li>
+              <li>We do <strong>not use</strong> medication information for advertising or cross-company tracking.</li>
+              <li>DoseCue does <strong>not disclose</strong> your medication records to healthcare providers, caregivers, insurers, employers, or advertisers. You may choose to share an export with a destination or person you select.</li>
+            </ul>
             <p>
-              We use reasonable measures to reduce unauthorized access to App data. However, no device, storage system, or electronic transmission method is completely secure.
+              Limited information is processed by Apple for App Store purchases and Apple-controlled diagnostics; by GitHub when legal pages are requested; by Google and your email provider if you contact support; and by destinations you deliberately choose for an exported file. Those providers handle information under their own terms and privacy policies.
             </p>
             <p>
-              You are responsible for maintaining device security, screen-lock protection, backups, and access to exported files.
+              We may disclose support communications if reasonably necessary to comply with applicable law, respond to a valid legal request, or protect users, our rights, or the security of the service. Because core medication data is not held on a DoseCue server, we ordinarily cannot retrieve or disclose it.
             </p>
           </section>
 
-          <!-- Section 9 -->
           <section id="sec-9" class="doc-section">
-            <h2 class="doc-section-h2">9. Children’s Privacy</h2>
+            <h2 class="doc-section-h2">9. Retention, Delete Data, Uninstallation, and Backups</h2>
             <p>
-              DoseCue is not specifically directed to children under 13.
+              Local records remain on your device until you edit or delete them, use Delete Data, or uninstall the App. Reports and statistics are calculated from dose history and can be generated again while the underlying dose history remains.
             </p>
+            <p>The Delete Data categories work as follows:</p>
+            <ul>
+              <li><strong>Medications &amp; Schedules:</strong> removes medication details, schedules, reminder times, and associated inventory and expiration records. Dose-history snapshots remain unless Dose History is also selected.</li>
+              <li><strong>Dose History:</strong> removes dose records and automatically includes Reports &amp; Statistics because those reports depend on dose history. Medication definitions remain unless separately selected.</li>
+              <li><strong>Reports &amp; Statistics only:</strong> removes generated report files and App-managed temporary export/cache files. It does not delete dose history, so charts and statistics may be generated again.</li>
+              <li><strong>Inventory:</strong> removes stock quantities, thresholds, and expiration information while retaining medication definitions, schedules, and dose history.</li>
+              <li><strong>App Settings:</strong> resets the local profile and avatar copies, selected language, onboarding state, and in-App notification preferences. It retains medication data, dose history, inventory, Apple purchase history, active subscriptions, and the locally cached Premium entitlement needed for continued access.</li>
+              <li><strong>Select All:</strong> performs all actions above, clears all App preferences including the cached Premium entitlement, removes DoseCue’s pending and delivered notifications, clears the widget cache, and returns the App to its first-launch onboarding state. StoreKit may restore an active purchase after Apple verifies it again.</li>
+            </ul>
+            <p>Delete Data and uninstallation do not remove:</p>
+            <ul>
+              <li>Apple’s App Store purchase history or an active subscription; subscriptions must be managed through your Apple Account.</li>
+              <li>Exports or other copies previously saved or shared outside DoseCue.</li>
+              <li>Original photos in your photo library.</li>
+              <li>iOS system permissions, which you manage in iOS Settings.</li>
+              <li>Support emails or information independently held by Apple, GitHub, Google, your email provider, or a sharing destination.</li>
+            </ul>
             <p>
-              We do not knowingly request personal contact information from children. A parent or guardian should supervise use of the App by a minor, especially when medication schedules are involved.
+              Depending on your iCloud Backup and device settings, Apple may include App data in a device backup. DoseCue does not control or access those backups. Deleting information inside the App may not immediately delete an older backup; backup retention and restoration are controlled by Apple and your settings.
             </p>
           </section>
 
-          <!-- Section 10 -->
           <section id="sec-10" class="doc-section">
-            <h2 class="doc-section-h2">10. International Users</h2>
+            <h2 class="doc-section-h2">10. Security</h2>
             <p>
-              Depending on your location, you may have rights to access, correct, delete, or restrict the use of personal information under laws such as GDPR or CCPA.
+              DoseCue uses Apple platform storage and file-protection features for its managed local files and keeps core data off a DoseCue-operated server. Temporary export and report files also use device file protection where supported.
             </p>
             <p>
-              Because core medication data is stored locally, many of these controls are available directly through the App’s export and deletion features in Settings.
+              No device, storage system, or electronic transmission is completely secure. You are responsible for maintaining a device passcode, controlling Lock Screen and widget visibility, keeping iOS current, protecting backups, and securing files you export or share.
             </p>
           </section>
 
-          <!-- Section 11 -->
           <section id="sec-11" class="doc-section">
-            <h2 class="doc-section-h2">11. Changes to This Policy</h2>
+            <h2 class="doc-section-h2">11. Children’s Privacy</h2>
             <p>
-              We may update this Privacy Policy when the App, its services, or legal requirements change. The current version will be published on this page with an updated effective date.
+              DoseCue is intended for users aged 13 and older. It is not directed to children under 13 and does not knowingly operate an account service for children. A parent or legal guardian should approve and supervise use by a minor, particularly because medication information is sensitive and reminder entries must be accurate.
+            </p>
+            <p>
+              If you believe a child sent personal information through support email without appropriate consent, contact us so we can review and delete it where required.
             </p>
           </section>
 
-          <!-- Section 12 -->
           <section id="sec-12" class="doc-section">
-            <h2 class="doc-section-h2">12. Contact</h2>
+            <h2 class="doc-section-h2">12. Your Choices and Privacy Rights</h2>
             <p>
-              If you have any questions or privacy-related requests, please contact us at:
+              You can view, correct, export, or delete core information directly in the App. Because DoseCue does not receive your local medication database, we generally cannot access, correct, or delete that database for you.
+            </p>
+            <p>
+              For personal information we do hold, such as a support email, you may ask to access, correct, or delete it, object to or restrict certain processing, or exercise other rights available under applicable law. We may need to verify that the request came from the relevant email account and may retain limited information where the law permits or requires it. You may also have the right to complain to your local data-protection authority.
+            </p>
+            <p>
+              Requests may be sent to the contact in Section 14. Apple, GitHub, Google, email providers, and sharing destinations are responsible for requests concerning information they independently control.
+            </p>
+          </section>
+
+          <section id="sec-13" class="doc-section">
+            <h2 class="doc-section-h2">13. Changes to This Policy</h2>
+            <p>
+              We may update this Privacy Policy when DoseCue’s features, data practices, providers, or legal obligations change. The revised page will show a new “Last Updated” date and effective date. When reasonably practicable, material changes will also be communicated in the App or through another appropriate notice before they take effect.
+            </p>
+          </section>
+
+          <section id="sec-14" class="doc-section">
+            <h2 class="doc-section-h2">14. Contact</h2>
+            <p>Privacy questions and requests may be sent to:</p>
+            <p>
+              <strong>Ngoc Son</strong><br>
+              Vietnam
             </p>
             <p style="font-weight: 600; color: var(--primary);">
               <a href="mailto:dosecue.official@gmail.com">dosecue.official@gmail.com</a>
             </p>
           </section>
-
         </article>
       </div>
-
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-top">
@@ -249,7 +280,7 @@
       </div>
 
       <div class="footer-bottom">
-        <div>© 2026 DoseCue Team. All rights reserved.</div>
+        <div>© 2026 Ngoc Son. All rights reserved.</div>
         <div>Local-First Privacy Architecture</div>
       </div>
     </div>
