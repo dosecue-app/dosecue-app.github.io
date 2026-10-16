@@ -283,150 +283,48 @@ a:hover {
   overflow-wrap: anywhere;
 }
 
-/* App Mockup UI */
-.hero-mockup-wrapper {
+/* Actual App Screenshots */
+.hero-screenshots {
   position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.app-phone-card {
-  width: 100%;
-  max-width: 360px;
-  background: var(--surface-card);
-  border-radius: 36px;
-  padding: 1.5rem;
-  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15), 0 0 0 1px rgba(15, 23, 42, 0.05);
-  border: 8px solid #0f172a;
-}
-
-.phone-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
-}
-
-.phone-header-title {
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-.phone-date {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.progress-widget {
-  background: var(--surface-card);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
-  padding: 1rem 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
-  box-shadow: var(--shadow-sm);
-}
-
-.progress-info-title {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.progress-info-val {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--text-main);
-}
-
-.progress-ring {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: conic-gradient(var(--success) 0% 75%, var(--surface-subtle) 75% 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.progress-ring::before {
-  content: "75%";
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-}
-
-.dose-card-mock {
-  background: var(--surface-card);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
-  padding: 1rem;
-  margin-bottom: 0.75rem;
-  box-shadow: var(--shadow-sm);
-}
-
-.dose-mock-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.dose-icon-bg {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-}
-
-.icon-blue { background: #dbeafe; color: #2563eb; }
-.icon-amber { background: #fef3c7; color: #d97706; }
-.icon-purple { background: #f3e8ff; color: #7c3aed; }
-
-.dose-mock-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--text-main);
-}
-
-.dose-mock-sub {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.dose-mock-actions {
+  isolation: isolate;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.5rem;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 500px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 1rem 0.75rem 2rem;
 }
 
-.btn-action-sm {
-  padding: 0.4rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-align: center;
-  border: none;
+.hero-screenshots::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 12% 0 8%;
+  background: linear-gradient(135deg, var(--primary-glow), var(--premium-glow));
+  border-radius: 50%;
+  filter: blur(32px);
 }
 
-.btn-skip { background: var(--surface-subtle); color: var(--text-secondary); }
-.btn-taken { background: var(--success); color: white; }
-.btn-snooze { background: #fef3c7; color: #d97706; }
+.app-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 6px solid #111827;
+  border-radius: 32px;
+  box-shadow: 0 0 0 1px #475569, 0 24px 48px -16px rgba(15, 23, 42, 0.3);
+}
+
+.app-screenshot-today {
+  transform: rotate(-3deg);
+}
+
+.app-screenshot-report {
+  margin-top: 3rem;
+  transform: rotate(4deg);
+}
 
 /* Features Grid */
 .section-header {
@@ -743,6 +641,16 @@ a:hover {
 }
 
 @media (max-width: 640px) {
+  .hero-screenshots {
+    max-width: 420px;
+    gap: 0.75rem;
+  }
+
+  .app-screenshot {
+    border-width: 4px;
+    border-radius: 22px;
+  }
+
   .nav-links {
     display: none;
   }

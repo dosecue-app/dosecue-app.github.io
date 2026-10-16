@@ -6,7 +6,7 @@
   <title>DoseCue — Smart & Local-First iOS Medication Tracker</title>
   <meta name="description" content="DoseCue is a private, local-first iOS medication reminder app with dose tracking, refill alerts, history reports, and zero cloud tracking.">
   <link rel="icon" type="image/png" href="assets/dosecue.png">
-  <link rel="stylesheet" href="styles.css?v=20260730">
+  <link rel="stylesheet" href="styles.css?v=20261016-2">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -62,62 +62,23 @@
         </div>
       </div>
 
-      <!-- App Mockup UI (Rendered CSS view matching actual iOS screenshots) -->
-      <div class="hero-mockup-wrapper">
-        <div class="app-phone-card">
-          <div class="phone-header">
-            <div>
-              <div class="phone-header-title">Today</div>
-              <div class="phone-date">Wednesday, July 22</div>
-            </div>
-            <div style="background: #e0e7ff; color: #2563eb; padding: 0.3rem 0.6rem; border-radius: 8px; font-size: 0.75rem; font-weight: 600;">
-              📅 Calendar
-            </div>
-          </div>
-
-          <!-- Progress Widget -->
-          <div class="progress-widget">
-            <div>
-              <div class="progress-info-title">Today's Progress</div>
-              <div class="progress-info-val">6 / 8</div>
-              <div style="font-size: 0.75rem; color: var(--text-muted);">doses completed</div>
-            </div>
-            <div class="progress-ring"></div>
-          </div>
-
-          <!-- Dose Item 1 -->
-          <div class="dose-card-mock">
-            <div class="dose-mock-header">
-              <div class="dose-icon-bg icon-blue">💊</div>
-              <div>
-                <div class="dose-mock-title">Metformin 500 mg</div>
-                <div class="dose-mock-sub">09:15 AM • 1 tablet</div>
-              </div>
-            </div>
-            <div class="dose-mock-actions">
-              <button class="btn-action-sm btn-skip">✕ Skip</button>
-              <button class="btn-action-sm btn-taken">✓ Taken</button>
-              <button class="btn-action-sm btn-snooze">⏰ Snooze</button>
-            </div>
-          </div>
-
-          <!-- Dose Item 2 -->
-          <div class="dose-card-mock">
-            <div class="dose-mock-header">
-              <div class="dose-icon-bg icon-amber">🟡</div>
-              <div>
-                <div class="dose-mock-title">Amoxicillin 250 mg</div>
-                <div class="dose-mock-sub">10:15 AM • 1 capsule</div>
-              </div>
-            </div>
-            <div class="dose-mock-actions">
-              <button class="btn-action-sm btn-skip">✕ Skip</button>
-              <button class="btn-action-sm btn-taken">✓ Taken</button>
-              <button class="btn-action-sm btn-snooze">⏰ Snooze</button>
-            </div>
-          </div>
-
-        </div>
+      <!-- Actual DoseCue screenshots: daily dose tracking and progress reports -->
+      <div class="hero-screenshots">
+        <img
+          class="app-screenshot app-screenshot-today"
+          src="assets/dosecue-today.jpg"
+          alt="Track today’s doses in DoseCue, with daily progress and actions to mark a dose taken, skip it, or snooze the reminder."
+          width="870"
+          height="1883"
+          fetchpriority="high"
+        >
+        <img
+          class="app-screenshot app-screenshot-report"
+          src="assets/dosecue-report.jpg"
+          alt="See your progress in DoseCue, with medication completion charts and a weekly routine score."
+          width="870"
+          height="1883"
+        >
       </div>
     </section>
 
